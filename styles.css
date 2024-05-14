@@ -1,3 +1,16 @@
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 512px; /* Adjust the width as needed */
+    height: auto;
+}
+
+.logo-container h1 {
+    margin-top: 10px; /* Adjust margin to separate logo and heading */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
