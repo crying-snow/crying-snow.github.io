@@ -3,7 +3,7 @@
 }
 
 .logo-container img {
-    width: 512px; /* Adjust the width as needed */
+    width: 256px; /* Adjust the width as needed */
     height: auto;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 20px;
 }
