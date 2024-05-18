@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crying Snow</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <!-- Logo and Welcome Message Container -->
-        <div class="logo-container">
-            <img src="assets/logo.png" alt="Crying Snow Logo">
-            <h1>Welcome to Crying Snow</h1>
+        <div class="logo-title-container">
+            Crying Snow
         </div>
 
         <nav>
             <ul>
+                <li><a href="#games">Games</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <section class="banner">
+        <div class="container">
+            <div class="text">
+                <h1>Unlock Your Creativity with our Game Templates!</h1>
+                <p>Are you ready to dive into the exciting world of game development? Look no further! Crying Snow
+                    Studios presents a collection of complete game projects tailored for hyper-casual game enthusiasts.
+                </p>
+                <button id="gamesButton">Check Our Games</button>
+            </div>
+            <div class="image">
+                <img src="assets/employee.png" alt="Employee">
+            </div>
+        </div>
+    </section>
+
     <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Crying Snow Studios, your go-to destination for high-quality game assets on the Unity Asset Store.</p>
-            <p>At Crying Snow, we are passionate about empowering game developers with ready-to-use assets, complete projects, and templates to accelerate their game development journey.</p>
-            <p>Our team of experienced developers and designers works tirelessly to craft immersive and versatile assets that cater to a wide range of game genres and themes. Whether you're creating a casual mobile game, a thrilling action-adventure, or a captivating VR experience, we have the assets you need to bring your vision to life.</p>
-            <p>With a commitment to excellence and innovation, we strive to deliver assets that not only meet but exceed the expectations of game developers worldwide. From character models and animations to environment packs and gameplay mechanics, our extensive collection of assets is designed to inspire creativity and streamline your development process.</p>
-            <p>Explore our portfolio on the Unity Asset Store and discover the perfect assets to enhance your next game project. Join the growing community of developers who trust Crying Snow Studios for top-notch game assets and unparalleled support.</p>
+        <section id="games">
+            <h2>Our Games</h2>
+            <div class="games-grid">
+
+                <div class="game-card"
+                    data-description="Fast Food Rush is a template offering a complete project for the development of a hyper-casual restaurant management simulation game."
+                    data-link="https://assetstore.unity.com/preview/281506/910176">
+                    <img src="assets/fast_food_rush.png" alt="Fast Food Rush">
+                    <h3>Fast Food Rush</h3>
+                </div>
+                <!-- Add more game cards as needed -->
+            </div>
         </section>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>At Crying Snow Studios, we offer a diverse range of game assets and services to meet the needs of game developers at every stage of their projects. Our services include:</p>
-            <ul>
-                <li><strong>Complete Projects:</strong> Explore our library of complete game projects tailored for various genres and platforms. Each project comes with fully developed gameplay mechanics, assets, and ready-to-use scripts, allowing you to jumpstart your game development process.</li>
-                <li><strong>Asset Packs:</strong> Browse our extensive collection of asset packs, including character models, environment assets, animations, sound effects, and more. Our asset packs are designed to provide comprehensive solutions for building immersive game worlds and captivating experiences.</li>
-                <li><strong>Customization Services:</strong> Need personalized assets or modifications to suit your specific game requirements? Our team offers customization services to adapt existing assets or create bespoke solutions tailored to your project's unique needs.</li>
-                <li><strong>Technical Support:</strong> As part of our commitment to customer satisfaction, we provide ongoing technical support to assist you with asset integration, troubleshooting, and optimization. Our dedicated support team is here to ensure a smooth and seamless experience throughout your game development journey.</li>
-                <li><strong>Asset Updates and Maintenance:</strong> Stay up-to-date with the latest enhancements and improvements to our assets. We regularly update our asset packages to incorporate user feedback, address issues, and introduce new features, ensuring that you always have access to the best resources for your games.</li>
-            </ul>
-            <p>Whether you're an indie developer, a seasoned studio, or a hobbyist, Crying Snow Studios is your trusted partner for quality game assets and reliable services. Explore our offerings on the Unity Asset Store and elevate your game development projects to new heights!</p>
+        <!-- Modal Structure -->
+        <div id="gameModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="game-details">
+                    <h3 id="modalTitle"></h3>
+                    <img id="modalImage" src="" alt="">
+                    <p id="modalDescription"></p>
+                    <a id="assetLink" href="#" target="_blank">View on Unity Asset Store</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section id="about">
+            <img src="assets/logo.png" alt="Fast Food Rush" class="logo">
+
+            <h2>About Us</h2>
+            <p>Crying Snow Studios is an indie game development studio dedicated to creating high-quality game
+                projects for
+                the Unity Asset Store.</p>
+            <p>Driven by a passion for gaming and a commitment to excellence, we specialize in crafting complete
+                game projects that provide developers with ready-to-use assets, scripts, and gameplay mechanics.</p>
+            <p>With a focus on user experience and innovation, we strive to deliver immersive and engaging game
+                experiences that inspire creativity and captivate players.</p>
+            <p>Explore our portfolio on the Unity Asset Store and discover the perfect projects to kickstart your
+                game development journey. Join us in shaping the future of gaming!</p>
         </section>
+
+        <hr>
 
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Email: cryingsnowstudios@gmail.com</p>
+            <p>E-Mail:</p>
+            <p>cryingsnowstudios@gmail.com</p>
         </section>
+
+        <hr>
     </main>
 
     <footer>
@@ -58,4 +100,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
