@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crying Snow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-title-container">
+            Crying Snow
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="text">
+                <h1>Unlock Your Creativity with our Game Templates!</h1>
+                <p>Are you ready to dive into the exciting world of game development? Look no further! Crying Snow
+                    Studios presents a collection of complete game projects tailored for hyper-casual game enthusiasts.
+                </p>
+                <button id="gamesButton">Check Our Games</button>
+            </div>
+            <div class="image">
+                <img src="assets/employee.png" alt="Employee">
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="games">
+            <h2>Our Games</h2>
+            <div class="games-grid">
+
+                <div class="game-card"
+                    data-description="Fast Food Rush is a template offering a complete project for the development of a hyper-casual restaurant management simulation game."
+                    data-link="https://assetstore.unity.com/packages/slug/281506">
+                    <img src="assets/fast_food_rush.png" alt="Fast Food Rush">
+                    <h3>Fast Food Rush</h3>
+                </div>
+
+                <div class="game-card"
+                    data-description="Farming Island is a template offering a complete project for the development of a hyper-casual farming simulation game."
+                    data-link="https://assetstore.unity.com/packages/slug/295699">
+                    <img src="assets/farming_island.png" alt="Farming Island">
+                    <h3>Farming Island</h3>
+                </div>
+
+                <div class="game-card"
+                    data-description="Bring your convenience store vision to mobile! Checkout Frenzy is a mobile-ready template optimized for performance and touch controls. Create a captivating retail experience for players on the go."
+                    data-link="https://assetstore.unity.com/packages/slug/310321">
+                    <img src="assets/checkout_frenzy.png" alt="Checkout Fenzy">
+                    <h3>Farming Island</h3>
+                </div>
+                <!-- Add more game cards as needed -->
+            </div>
+        </section>
+
+        <!-- Modal Structure -->
+        <div id="gameModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="game-details">
+                    <h3 id="modalTitle"></h3>
+                    <img id="modalImage" src="" alt="">
+                    <p id="modalDescription"></p>
+                    <a id="assetLink" href="#" target="_blank">View on Unity Asset Store</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <section id="about">
+            <img src="assets/logo.png" alt="Crying Snow" class="logo">
+
+            <h2>About Us</h2>
+            <p>Crying Snow Studios is an indie game development studio dedicated to creating high-quality game
+                projects for
+                the Unity Asset Store.</p>
+            <p>Driven by a passion for gaming and a commitment to excellence, we specialize in crafting complete
+                game projects that provide developers with ready-to-use assets, scripts, and gameplay mechanics.</p>
+            <p>With a focus on user experience and innovation, we strive to deliver immersive and engaging game
+                experiences that inspire creativity and captivate players.</p>
+            <p>Explore our portfolio on the Unity Asset Store and discover the perfect projects to kickstart your
+                game development journey. Join us in shaping the future of gaming!</p>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>E-Mail:</p>
+            <p>cryingsnowstudios@gmail.com</p>
+        </section>
+
+        <hr>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Crying Snow Studios</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
